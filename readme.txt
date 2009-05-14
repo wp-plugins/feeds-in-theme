@@ -11,10 +11,14 @@ Creates 4 feeds : 'trdf' 'trss', 'trss2' and 'tatom' highly customisable using t
 == Description ==
 
 Creates 4 feeds : 
-    trdf => rdf in theme (template : feed-rdf.php)
-    trss => rss 1.0 in theme (template : feed-rss.php)
-    trss2 => rss 2.0 in theme (template : feed-rss2-comments.php and feed-rss2.php)
-    tatom => atom in theme (template : feed-atom-comments.php and feed-atom.php)
+  
+  trdf => rdf in theme (template : feed-rdf.php)
+  
+  trss => rss 1.0 in theme (template : feed-rss.php)
+  
+  trss2 => rss 2.0 in theme (template : feed-rss2-comments.php and feed-rss2.php)
+  
+  tatom => atom in theme (template : feed-atom-comments.php and feed-atom.php)
 
 Those feeds look for a feed template into the theme directory.
 If no template is found into the theme directory the feed uses the default wordpress feed template.
@@ -23,9 +27,12 @@ If no template is found into the theme directory the feed uses the default wordp
 
 1. Unzip into your `/wp-content/plugins/` directory. If you're uploading it make sure to upload
 the top-level folder. Don't just upload all the php files and put them in `/wp-content/plugins/`.
-1. Activate the plugin through the 'Plugins' menu in WordPress
-2. That's it!
-3. you can use create your own feed template into your theme directory.
+
+2. Activate the plugin through the 'Plugins' menu in WordPress
+
+3. That's it!
+
+4. you can use create your own feed template into your theme directory.
 
 == Frequently Asked Questions ==
 
