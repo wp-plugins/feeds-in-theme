@@ -1,4 +1,4 @@
-=== Category Meta plugin ===
+=== Feeds in Theme plugin ===
 Contributors: Eric Le Bail
 Donate link: #
 Tags: custom,custom feed,feed,feeds,rdf,rss,rss2,atom,plugin,theme,feeds in theme,feed in theme
