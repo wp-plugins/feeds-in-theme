@@ -1,7 +1,7 @@
 === Category Meta plugin ===
 Contributors: Eric Le Bail
 Donate link: #
-Tags: custom,custom feed,feed,feeds,rdf,rss,rss2,atom,plugin
+Tags: custom,custom feed,feed,feeds,rdf,rss,rss2,atom,plugin,theme,feeds in theme,feed in theme
 Requires at least: 2.6
 Tested up to: 2.6.5
 Stable tag: trunk
