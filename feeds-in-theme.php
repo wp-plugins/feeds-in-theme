@@ -3,7 +3,7 @@
  * Plugin Name: feeds-in-theme
  * Plugin URI: #
  * Description: Recreates the standard WordPress feeds to alow using theme templates in the feeds.
- * Version: 0.0.1
+ * Version: 1.0.0
  * Author: Eric Le Bail
  * Author URI: #
  *
