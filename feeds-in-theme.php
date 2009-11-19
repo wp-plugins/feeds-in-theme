@@ -3,7 +3,7 @@
  * Plugin Name: feeds-in-theme
  * Plugin URI: #
  * Description: Recreates the standard WordPress feeds to alow using theme templates in the feeds.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Eric Le Bail
  * Author URI: #
  *
@@ -28,23 +28,41 @@
  *
  */
 
+if (!defined('DIRECTORY_SEPARATOR'))
+{
+    if (strpos(php_uname('s'), 'Win') !== false )
+    define('DIRECTORY_SEPARATOR', '\\');
+    else
+    define('DIRECTORY_SEPARATOR', '/');
+}
+$pluginPath = ABSPATH.PLUGINDIR.DIRECTORY_SEPARATOR."wp-feeds-in-theme";
+$filePath = $pluginPath.DIRECTORY_SEPARATOR.basename(__FILE__);
+// Plugin install
+register_activation_hook($filePath,'fit_install');
+// plugin initialisation.
 add_action('init', 'fit_add_feed');
 
-
 /**
- * Function that creates the custom feeds and add a rewriterules to
- * call the feeds.
+ * Function that creates the custom feeds.
  * @return void.
  */
 function fit_add_feed() {
-    global $wp_rewrite;
     add_feed('trdf', 'fit_do_feed_rdf');
     add_feed('trss', 'fit_do_feed_rss');
     add_feed('trss2', 'fit_do_feed_rss2');
     add_feed('tatom', 'fit_do_feed_atom');
+}
+
+/**
+ * Function that add a rewriterules to call the feeds.
+ * @return void.
+ */
+function fit_install() {
+    global $wp_rewrite;
     add_action('generate_rewrite_rules', 'fit_rewrite_rules');
     $wp_rewrite->flush_rules();
 }
+
 
 /**
  * Function that creates the rewrite rules for custom feeds.

@@ -25,11 +25,10 @@ If no template is found into the theme directory the feed uses the default wordp
 
 This plugin has been tested with WP2.6.5, WP2.8.4 and WPmu2.8.4
 
-Updates:
-
-1.0.0 : Test under WP2.6.5, WP 2.8.4, WPmu2.8.4
 
 == Update Log ==
+
+1.0.1 : Performance improovment.
 
 1.0.0 : Test under WP2.6.5, WP 2.8.4, WPmu2.8.4
 
